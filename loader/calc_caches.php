@@ -114,8 +114,6 @@ function guess_whip_for_all($db, $db2)
 		$whip_guess = "unknown";
         if (whipless_party($party)) {
 			$whip_guess = "none";
-		    if ($party == "CWM" or $party == "DCWM")
-                $whip_guess = "abstain";
         }
 
 		# keep it very simple so it doesn't change and we can easily keep the set of exceptions constant.
