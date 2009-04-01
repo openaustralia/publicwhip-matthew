@@ -16,10 +16,10 @@ require_once "../website/parliaments.inc";
 $db = new DB();
 $db2 = new DB();
 
-current_rankings($db);
-count_party_stats($db, $db2);
 guess_whip_for_all($db, $db2);
 count_mp_info($db);
+current_rankings($db);
+count_party_stats($db, $db2);
 count_div_info($db);
 
 # then we loop through the missing entries and fill them in
