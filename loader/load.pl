@@ -1,4 +1,4 @@
-#! /usr/bin/perl -w 
+#! /usr/bin/env perl -w 
 use strict;
 
 # $Id: load.pl,v 1.17 2006/03/21 01:05:57 publicwhip Exp $
