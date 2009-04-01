@@ -77,10 +77,10 @@ function ClickSup(nsup) {
 <script type="text/javascript" src="walterzorn/wz_tooltip.js"></script>
 <center>
 
-<? if ($_SERVER["HTTP_HOST"] != 'www.publicwhip.org.uk'
+<? /* if ($_SERVER["HTTP_HOST"] != 'www.publicwhip.org.uk'
 	and $_SERVER["HTTP_HOST"] != 'publicwhip.org.uk') { ?>
 <strong>This is a test site - the real site is <a href="http://www.publicwhip.org.uk">over here</a>.</strong> Developers are busy making Public Whip better using this page.<p>
-<? } ?>
+<? } */ ?>
 
 <!-- hold the maximum width of the content -->
 <table align="center" class="container" cellpadding="0" cellspacing="0" border="0">
