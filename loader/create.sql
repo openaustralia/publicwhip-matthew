@@ -101,7 +101,7 @@ create table pw_division (
     index(division_date),
     index(division_number),
     index(house),
-    unique(division_date, division_number)
+    unique(house, division_date, division_number)
 );
 
 create table pw_vote (
