@@ -196,7 +196,7 @@ create table pw_dyn_newsletter (
   confirm tinyint,
   subscribed datetime,
   unique(email)
-)
+);
 
 -- who each issue of newsletter has been sent to so far
 create table pw_dyn_newsletters_sent (
