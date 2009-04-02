@@ -144,8 +144,8 @@ Newsletter (<a href="/newsletters/signup.php">info</a>): <INPUT TYPE="TEXT" NAME
 <?php print newsletter_navbar(); ?>
 <!--NEWSLETTEREND-->
 <a title="List of all votes in Parliament" href="<?=$toppath?>divisions.php">Divisions</a>
-<a title="List of all Members of House of Commons" href="<?=$toppath?>mps.php">MPs</a>
-<a title="List of all Members of House of Lords" href="<?=$toppath?>mps.php?house=lords">Lords</a>
+<a title="List of all Members of House of Representatives" href="<?=$toppath?>mps.php">Representatives</a>
+<a title="List of all Members of Senate" href="<?=$toppath?>mps.php?house=lords">Senators</a>
 <a title="Help to analyze MP's votes" href="<?=$toppath?>policies.php">Policies</a>
 <a title="Chat with other users" href="/forum"><strong>Forum</strong></a>
 <a title="Help run the Public Whip project" href="<?=$toppath?>project/index.php">Join Us</a>

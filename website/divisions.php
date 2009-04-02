@@ -52,11 +52,11 @@
 							 "description" => "Show divisions of both Houses",
 							 "lkdescription" => "Both houses");
 	$rdismodes_house["commons"] = array(
-							 "description" => "Show only Commons divisions",
-							 "lkdescription" => "Commons only");
+							 "description" => "Show only Representatives divisions",
+							 "lkdescription" => "Representatives only");
 	$rdismodes_house["lords"] = array(
-							 "description" => "Show only Lords divisions",
-							 "lkdescription" => "Lords only");
+							 "description" => "Show only Senate divisions",
+							 "lkdescription" => "Senate only");
     $rdefaultdisplay_house = "both";
 
 
@@ -134,7 +134,7 @@
 	if ($rdisplay_house != "both") 
     {
 		if (($rdisplay2 == "every") || ($rdisplay2 == "rebels"))
-            $title .= " - ".($rdisplay_house == "lords" ? "Lords" : "Commons")." only";
+            $title .= " - ".($rdisplay_house == "lords" ? "Senate" : "Representatives")." only";
         $colour_scheme = $rdisplay_house;
     }
 	if ($sort != 'date')
