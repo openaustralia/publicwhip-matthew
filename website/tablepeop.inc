@@ -10,7 +10,7 @@ require_once $toppath . "links.inc";
 require_once $toppath . "parliaments.inc";
 
 
-function print_mpcolumn_headings($columnforms)
+function print_mpcolumn_headings($columnforms, $house)
 {
     print "<tr class=\"headings\">";
     if ($columnforms["hitcounter"])
@@ -19,8 +19,16 @@ function print_mpcolumn_headings($columnforms)
         print "<td>Agreement</td>"; 
     if ($columnforms["name"])
 	    print "<td>Name</td>";
-	if ($columnforms["place"])
-        print "<td>Constituency</td>";
+	if ($columnforms["place"]) {
+		print "<td>";
+		if ($house == "commons")
+			print "Electorate";
+		else if ($house == "lords")
+			print "State";
+		else
+			print "Electorate / State";
+		print "</td>";
+	}
 	if ($columnforms["party"])
 	    print "<td>Party</td>";
 
@@ -99,10 +107,11 @@ function print_mp_row($nrows, $row, $name, $href, $colstyle, $showwhich, $friend
 	if ($columnforms["place"])
 	{
     	print "<td>";
-		if ($row['house'] != 'lords')
-        	print "<a href=\"mp.php?mpc=".urlencode(str_replace(" ", "_", $row['constituency']))."\">".$row['constituency']."</a>";
+		if ($row['house'] == 'lords')
+			# For the time being disable link to state for Senators
+        	print $row['constituency'];
     	else
-        	print "<i>(Lords)</i>";
+        	print "<a href=\"mp.php?mpc=".urlencode(str_replace(" ", "_", $row['constituency']))."\">".$row['constituency']."</a>";
 		print "</td>";
 	}
 
@@ -673,14 +682,13 @@ function mp_table($db, $mptabattr)
 
 
 	$columnforms["name"] = "yes";
-	if ($house != "lords")
-		$columnforms["place"] = "yes";
+	$columnforms["place"] = "yes";
 
     # Disabled 2008-10-01 by FAI, as people care about attendance when it is meaningless.
     $columnforms["attendance"] = null;
 
 	if ($mptabattr["headings"])
-		print_mpcolumn_headings($columnforms);
+		print_mpcolumn_headings($columnforms, $house);
 
     # now output a sentence when there is an empty table (in cases where that can happen)
     if ($db->rows() == 0)
