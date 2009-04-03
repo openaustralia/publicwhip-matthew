@@ -13,7 +13,7 @@ $title = "Counting votes on your behalf";
 pw_header();
 ?>
 
-<p>Every week, a dozen or so times, your MP votes on changes to British
+<p>Every week, a dozen or so times, your MP votes on changes to Australian
 law. This is their definitive exercise of power on your behalf. The
 Public Whip lets you see all their votes so you can hold them to account
 (<a href="faq.php">more information</a>).</p>
@@ -64,10 +64,10 @@ An at most monthly briefing.
 
 <li>
 <form class="search" action="search.php" name=pw>
-<p><span class="actionsheading">Find out how any MP or Lord votes</span>
+<p><span class="actionsheading">Find out how any Representative or Senator votes</span>
 <br>Enter your postcode or their name:
 <input maxLength=256 size=8 name=query value=""> <input type=submit value="Go" name=button>
-<br><i>Example: "OX1 3DR", "<?=$random_mp?>", "<?=$random_lord?>"</i>
+<br><i>Example: "2773", "<?=$random_mp?>", "<?=$random_lord?>"</i>
 </form>
 </p>
 
@@ -80,7 +80,7 @@ An at most monthly briefing.
 </form></p>
 </p>
 
-<li><p><span class="actionsheading">Test your MP or Lord against policies you care about</span>
+<li><p><span class="actionsheading">Test your Representative or Senator against policies you care about</span>
 <br>Either <a href="policies.php">browse</a> existing policies or <a
 href="account/addpolicy.php">make</a> a new policy</span>
 <br>Some examples:
