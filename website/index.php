@@ -91,19 +91,6 @@ href="account/addpolicy.php">make</a> a new policy</span>
 </p>
 </ol>
 
-<td width="20%" class="layout" bgcolor="#dddddd">
-<p><a href="minwhirl.php">
-<img src="minwhirl/minwhirl.png"></a>
-<p><a href="minwhirl.php">Reshuffle diagram of government posts</p>
-</a>
-<p><a href="mpsee.php">
-<img src="votemap/mpseethumb.png"></a>
-<p><a href="mpsee.php">Where is Brown?</p>
-</a>
-<div style=" text-align:center; background-color:blue; color:white; border:thick black dashed; float:right">A proud member of the 
-<a href="http://en.wikipedia.org/wiki/Parliamentary_informatics" style="background-color:#cdffff">Parliamentary Informatics</a> web-ring</div>
-</td>
-
 </td></tr></table>
 
 <table class="layout">
