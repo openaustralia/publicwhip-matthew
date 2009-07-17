@@ -116,14 +116,14 @@ title="Show all divisions ordered by most recent">more...</a>)</h2>
 
 </tr><tr><td>
 
-<h2>Top rebel MPs (<a href="mps.php?sort=rebellions" title="Show all MPs ordered by rebellions">more...</a>)</h2>
+<h2>Top rebel Representatives and Senators (<a href="mps.php?sort=rebellions&house=both" title="Show all politicians ordered by rebellions">more...</a>)</h2>
 
 <?php
 
 	$mptabattr = array("listtype" 	=> "parliament",
 					   "parliament" => "now", 
 					   "limit"	=> 3,
-					   "house" => "commons", 
+					   "house" => "both", 
                        "sortby"		=> "rebellions");
 	print "<table class=\"mps\">\n";
 	mp_table($db, $mptabattr);
@@ -132,7 +132,7 @@ title="Show all divisions ordered by most recent">more...</a>)</h2>
 
 </td><td>
 
-<h2>Best attending MPs and Lords (<a href="mps.php?sort=attendance&house=both" title="Show all MPs ordered by attendance">more...</a>)</h2>
+<h2>Best attending Representatives and Senators (<a href="mps.php?sort=attendance&house=both" title="Show all politicians ordered by attendance">more...</a>)</h2>
 <?
 	$mptabattr = array("listtype" 	=> "parliament",
 					   "parliament" => "now", 
