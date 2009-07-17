@@ -123,10 +123,6 @@ Just&nbsp;7&nbsp;Questions, 1&nbsp;minute</a>
 <form class="searchtitlebarform" action="/search.php" name=pw>
 Search: <input maxLength=256 size=12 id=query name=query onblur="fadeout(this)" onfocus="fadein(this)" value=""> <input type=submit value="Go" name=button>
 </form>
-<FORM ACTION="/newsletters/signup.php" METHOD="POST">
-Newsletter (<a href="/newsletters/signup.php">info</a>): <INPUT TYPE="TEXT" NAME="email" id="email" onblur="fadeout(this)" onfocus="fadein(this)" VALUE="" SIZE="12" MAXLENGTH="50">
-<INPUT TYPE="SUBMIT" NAME="submit" VALUE="Go">
-</FORM>
 
 </td>
 </tr>
@@ -140,9 +136,6 @@ Newsletter (<a href="/newsletters/signup.php">info</a>): <INPUT TYPE="TEXT" NAME
 <!--ACCOUNTEND-->
 </div>
 <a title="Front page and site highlights" href="<?=$toppath?>index.php">Home</a>
-<!--NEWSLETTERBEGIN-->
-<?php print newsletter_navbar(); ?>
-<!--NEWSLETTEREND-->
 <a title="List of all votes in Parliament" href="<?=$toppath?>divisions.php">Divisions</a>
 <a title="List of all Members of House of Representatives" href="<?=$toppath?>mps.php">Representatives</a>
 <a title="List of all Members of Senate" href="<?=$toppath?>mps.php?house=lords">Senators</a>

@@ -43,21 +43,6 @@ Public Whip lets you see all their votes so you can hold them to account
 
 <tr>
 
-<td width="20%" class="layout" bgcolor="#dddddd">
-<h2>Newsletter</h2>
-<p>Keep up with the Public Whip project.
-An at most monthly briefing.
-<p>
-    <FORM ACTION="/newsletters/signup.php" METHOD="POST">
-    <B>Your email: </B><INPUT TYPE="TEXT" NAME="email" id="email" VALUE="<?=$email?>" SIZE="15" MAXLENGTH="50">
-     <INPUT TYPE="SUBMIT" NAME="submit" VALUE="Subscribe">
-    </FORM>
-
-<p><a href="newsletters/signup.php">Privacy policy</a>
-<!--<h2>Forum</h2>
-<p><a href="/forum">Chat in our forum</a> to other users.-->
-</td>
-
 <td class="layout" bgcolor="#eeeeee" colspan="2">
 <h2>At the Public Whip you can:</i></h2>
 <ol class="actions" type="1">
