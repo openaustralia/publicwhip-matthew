@@ -514,19 +514,19 @@ function no_division_found($plural)
 			if ($display == "summary")
 			{
 				print "<h2><a name=\"votes\">Rebel Voters - sorted by $sort</a></h2>\n";
-				print "<p>".($house == "lords" ? "Lords" : "MPs")."
+				print "<p>".($house == "lords" ? "Senators" : "Representatives")."
 						for which their vote in this division differed from the majority vote of their party.
 						You can see <a href=\"$thispage&display=allvotes$tpsort\">all votes</a> in this division,
-						or <a href=\"$thispage&display=allpossible$tpsort\">every eligible ".($house == "lords" ? "lord" : "MP")."</a> who could have
+						or <a href=\"$thispage&display=allpossible$tpsort\">every eligible ".($house == "lords" ? "Senator" : "Representative")."</a> who could have
 						voted in this division</p>\n";
 			}
 			elseif ($display == "allvotes")
 			{
 				print "<h2><a name=\"votes\">All Votes Cast - sorted by $sort</a></h2>\n";
-				print "<p>".($house == "lords" ? "Lords" : "MPs")."
+				print "<p>".($house == "lords" ? "Senators" : "Representatives")."
 						for which their vote in this division differed
 						from the majority vote of their party are marked in red.
-						Also shows which ".($house == "lords" ? "lords" : "MPs")."
+						Also shows which ".($house == "lords" ? "Senators" : "Representatives")."
 						were ministers at the time of this vote.
 						You can also see <a href=\"$thispage&display=allpossible$tpsort\">every eligible ".($house == "lords" ? "lord" : "MP")."</a>
 						including those who did not vote in this division.</p>\n";
@@ -543,8 +543,8 @@ function no_division_found($plural)
             }
             else # all possible
 			{
-				print "<h2><a name=\"votes\">All ".($house == "lords" ? "lords" : "MPs")." Eligible to Vote - sorted by $sort</a></h2>\n";
-				print "<p>Includes ".($house == "lords" ? "lords" : "MPs")." who were absent (or abstained)
+				print "<h2><a name=\"votes\">All ".($house == "lords" ? "Senators" : "Representatives")." Eligible to Vote - sorted by $sort</a></h2>\n";
+				print "<p>Includes ".($house == "lords" ? "Senators" : "Representatives")." who were absent (or abstained)
 						from this vote.</p>\n";
 			}
 		}
@@ -555,7 +555,7 @@ function no_division_found($plural)
 			if ($display == "opposites")
 			{
 				print "<h2><a name=\"votes\">Opposite in Votes - sorted by $sort</a></h2>\n";
-				print "<p>".($house == "lords" ? "Lords" : "MPs")." for which their vote on Motion (a) was opposite to their";
+				print "<p>".($house == "lords" ? "Senators" : "Representatives")." for which their vote on Motion (a) was opposite to their";
 				if ($div2invert)
 					print " <b>inverted</b>";
 				print " vote on Motion (b).\n";
@@ -566,7 +566,7 @@ function no_division_found($plural)
 			elseif ($display == "differences")
 			{
 				print "<h2><a name=\"votes\">Difference in Votes - sorted by $sort</a></h2>\n";
-				print "<p>".($house == "lords" ? "Lords" : "MPs")." for which their vote on Motion (a) differed from their";
+				print "<p>".($house == "lords" ? "Senators" : "Representatives")." for which their vote on Motion (a) differed from their";
 				if ($div2invert)
 					print " <b>inverted</b>";
 				print " vote on Motion (b).\n";
@@ -577,13 +577,13 @@ function no_division_found($plural)
 			elseif ($display == "allvotes")
 			{
 				print "<h2><a name=\"votes\">All Votes Cast - sorted by $sort</a></h2>\n";
-				print "<p>All ".($house == "lords" ? "lords" : "MPs")." who voted in one or other of the two divisions.
-						Also shows which ".($house == "lords" ? "lords" : "MPs")." were ministers at the time of the first vote.</p>\n";
+				print "<p>All ".($house == "lords" ? "Senators" : "Representatives")." who voted in one or other of the two divisions.
+						Also shows which ".($house == "lords" ? "Senators" : "Representatives")." were ministers at the time of the first vote.</p>\n";
 			}
 			else  # all votes
 			{
-				print "<h2><a name=\"votes\">All ".($house == "lords" ? "Lords" : "MPs")." Eligible to Vote - sorted by $sort</a></h2>\n";
-				print "<p>Includes ".($house == "lords" ? "lords" : "MPs")." who were absent (or abstained)
+				print "<h2><a name=\"votes\">All ".($house == "lords" ? "Senators" : "Representatives")." Eligible to Vote - sorted by $sort</a></h2>\n";
+				print "<p>Includes ".($house == "lords" ? "Senators" : "Representatives")." who were absent (or abstained)
 						from the first vote vote.</p>\n";
 			}
 		}
@@ -670,7 +670,7 @@ function no_division_found($plural)
 
         #print "<h2><a name=\"simdiv\">Similar Divisions</a></h2>";
         print "<p>Divisions where the ".
-            ($divattr["house"] == "lords" ? "Lords" : "MPs") . "
+            ($divattr["house"] == "lords" ? "Senators" : "Representatives") . "
                 voted in a similar way to the
                 division on this page.  Click 'details...' to see which
                 votes differ between the two divisions.</p>";
