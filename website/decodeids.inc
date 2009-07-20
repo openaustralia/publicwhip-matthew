@@ -86,16 +86,16 @@ function get_mpid_attr($db, $db2, $mpid, $bbyconstituency, $i, $voter2dream_over
 		if ($row['house'] == 'commons')
 		{
 			$mpprop['housenamesuffix'] = 'MP';
-			$mpprop['housenoun'] = 'MP';
-			$mpprop['housenounplural'] = 'MPs';
+			$mpprop['housenoun'] = 'Representative';
+			$mpprop['housenounplural'] = 'Representatives';
 			$mpprop['fullname'] = "$mppropname MP, ".$row['constituency'];
 		}
 		else
 		{
 			$mpprop['housenamesuffix'] = '';
-			$mpprop['housenoun'] = 'Lord';
-			$mpprop['housenounplural'] = 'Lords';
-			$mpprop['fullname'] = $mppropname;
+			$mpprop['housenoun'] = 'Senator';
+			$mpprop['housenounplural'] = 'Senators';
+			$mpprop['fullname'] = "Senator ".$mppropname;
 		}
 
 		# check for an over-lap with the dreammp
