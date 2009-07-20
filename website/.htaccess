@@ -15,12 +15,11 @@ DirectoryIndex index.php
 
 # all links on publicwhip.org.uk are permalinks
 # this lets us move pages without breaking them
-RedirectPermanent /rebels.php http://www.publicwhip.org.uk/mps.php?sort=rebellions
-RedirectPermanent /news.php http://www.publicwhip.org.uk/newsletters/archive.php
-RedirectPermanent /code.php http://www.publicwhip.org.uk/project/code.php
-RedirectPermanent /mp-info.xml http://www.publicwhip.org.uk/feeds/mp-info.xml
-RedirectPermanent /dreammp.php http://www.publicwhip.org.uk/policy.php
-RedirectPermanent /awstats http://seagrass.goatchurch.org.uk/cgi-bin/awstats.pl?config=publicwhip
+RedirectPermanent /rebels.php /mps.php?sort=rebellions
+RedirectPermanent /news.php /newsletters/archive.php
+RedirectPermanent /code.php /project/code.php
+RedirectPermanent /mp-info.xml /feeds/mp-info.xml
+RedirectPermanent /dreammp.php /policy.php
 
 Options +FollowSymLinks
 RewriteEngine On
