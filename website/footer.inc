@@ -18,11 +18,6 @@
 <a title="Send comments, problems or suggestions" href="/email.php">Contact us</a>
 <a title="Fodder for your spreadsheet" href="/project/data.php">Data feeds</a>
 <a title="Public Whip is open source software" href="/project/code.php">Source code</a>
- <!-- Open Knowledge Link -->
-<a href="http://okd.okfn.org/">
-<img style="vertical-align: bottom" alt="This material is Open Knowledge" border="0"
-src="/images/ok_80x23_red_green.png" /></a>
-<!-- /Open Knowledge Link -->
 </span>
 <span class="footerright">
 <img width="0" height="23" style="vertical-align: bottom"> <!-- nasty fake image to get vspacing same as footerleft -->

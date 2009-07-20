@@ -363,15 +363,6 @@ See the answer to <a href="#contact">I've found an error</a> for details.
 it, we ask you to refer your readers to www.publicwhip.org.uk.  This way they
 can use and contribute themselves.
 
-<p>Public Whip's data meets with the 
-<a href="http://okd.okfn.org/">Open Knowledge Definition</a>.
- <!-- Open Knowledge Link -->
-<a href="http://okd.okfn.org/">
-<img style="vertical-align: bottom" alt="This material is Open Knowledge" border="0"
-src="/images/ok_80x23_red_green.png" /></a>
-<!-- /Open Knowledge Link -->
-
-
 <h2 class="faq"><a name="playwith">Can I play with the software?</a></h2>
 
 <p> Sure.  All the software we've written is free (libre and gratuit), protected by the <a href="http://www.fsf.org/licensing/licenses/agpl-3.0.html">GNU Affero General Public License</a> (which means you can use it and change it, but you have to release any changes you make).  It's not complicated,
