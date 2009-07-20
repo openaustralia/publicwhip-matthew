@@ -13,9 +13,8 @@
 # give the scond an id with the month in as well.  The name can change
 # (as it is not in URLs), so can be any clarifying pretty description.
 $parliaments = array(
-    '2005' => array('from' => '2005-05-05', 'to' => '9999-12-31', 'name' => '2005 (current)'),
-    '2001' => array('from' => '2001-06-07', 'to' => '2005-04-11', 'name' => '2001-2005'),
-    '1997' => array('from' => '1997-05-01', 'to' => '2001-05-14', 'name' => '1997-2001'),
+    '2008' => array('from' => '2008-02-12', 'to' => '9999-12-31', 'name' => '2008 (current)'),
+    '2004' => array('from' => '2004-11-16', 'to' => '2007-10-17', 'name' => '2004-2007'),
 );
 
 # These are parliamentary sessions (i.e. years) - nothing to do with
