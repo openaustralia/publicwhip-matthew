@@ -11,11 +11,7 @@ $title = "Join the Project"; pw_header();
 <p>Join in with the Public Whip project, or examine and use the source code behind it.
 
 <p>
-<ul> 
-<li>Make sure you are <a href="../account/register.php">signed up to our
-newsletter</a>.
-<li>Join the <a href="https://lists.sourceforge.net/lists/listinfo/publicwhip-playing">publicwhip-playing email list</a> where we chat about all this stuff.
-</ul>
+Make sure to join the <a href="https://lists.sourceforge.net/lists/listinfo/publicwhip-playing">publicwhip-playing email list</a> where we chat about all this stuff.
 <ul>
 <li><a href="research.php">Research parliament</a> &mdash; work with others to understand divisions
 <li><a href="data.php">Raw data</a> &mdash; load the votes into your favourite spreadsheet, and more

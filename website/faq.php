@@ -663,9 +663,7 @@ Informatics</a> Wikipedia article.
 
 
 <h2 class="faq"><a name="keepup">How can I keep up with what you are doing?</a></h2>
-<p><a href="newsletters/signup.php">Subscribe to our newsletter!</a>  It's
-at most once a month, and has interesting news and articles
-relating to the project. You can <a href="/forum/">chat with other users</a> on
+<p>You can <a href="/forum/">chat with other users</a> on
 our forum.
 
 
