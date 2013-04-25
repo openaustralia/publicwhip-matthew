@@ -1,4 +1,5 @@
-#! /usr/bin/env perl -w 
+#!/usr/bin/env perl
+use warnings;
 use strict;
 
 # $Id: load.pl,v 1.17 2006/03/21 01:05:57 publicwhip Exp $
