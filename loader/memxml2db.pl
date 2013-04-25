@@ -53,8 +53,8 @@ my $twig = XML::Twig->new(
 $twig->parsefile("$members_location/divisions.xml");
 $twig->parsefile("$members_location/people.xml");
 $twig->parsefile("$members_location/ministers.xml");
-$twig->parsefile("$members_location/all-members.xml");
-$twig->parsefile("$members_location/peers-ucl.xml");
+$twig->parsefile("$members_location/representatives.xml");
+$twig->parsefile("$members_location/senators.xml");
 
 # Delete things left that shouldn't be from this table
 foreach my $gid (keys %$gid_to_internal) {
@@ -80,9 +80,9 @@ sub loadmember
     my $house = $memb->att('house');
     my $gid = $memb->att('id');
     if ($gid =~ m#uk.org.publicwhip/member/#) {
-        die if $house ne 'commons';
+        die if $house ne 'representatives';
     } elsif ($gid =~ m#uk.org.publicwhip/lord/#) {
-        die if $house ne 'lords';
+        die if $house ne 'senate';
     } else {
         die "unknown gid type $gid";
     }
@@ -104,7 +104,7 @@ sub loadmember
     my $title = $memb->att('title');
     my $firstname = $memb->att('firstname');
     my $lastname = $memb->att('lastname');
-    my $constituency = $memb->att('constituency');
+    my $constituency = $memb->att('division');
     my $fromdate = $memb->att('fromdate');
     my $todate = $memb->att('todate');
     my $fromwhy = $memb->att('fromwhy');
