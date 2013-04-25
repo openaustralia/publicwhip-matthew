@@ -25,7 +25,7 @@ function html_scrub($text)
 function isrobot()
 {
     $useragent = $_SERVER["HTTP_USER_AGENT"];
-    return ereg("Google|Slurp|msnbot|robot|Gigabot|Teoma|VoilaBot|searchme|ia_archiver|Crawler|MSNBOT|MLBot|Wget|Yandex", $useragent);
+    return preg_match("/Google|Slurp|msnbot|robot|Gigabot|Teoma|VoilaBot|searchme|ia_archiver|Crawler|MSNBOT|MLBot|Wget|Yandex/", $useragent);
 }
 
 
