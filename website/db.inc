@@ -14,7 +14,7 @@ $bdebug = 0;
 
 function db_scrub($text)
 {
-    return mysql_escape_string(stripslashes($text));
+    return mysql_real_escape_string(stripslashes($text));
 }
 
 function html_scrub($text)

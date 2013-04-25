@@ -45,9 +45,9 @@ function write_single_policy_vote($db, $divattr, $voter)
 
     # a submit was posted on this page
     $voteannouce = "";
-    if (mysql_escape_string($_POST["submit"]) && $votechangeable)
+    if (mysql_real_escape_string($_POST["submit"]) && $votechangeable)
     {
-        $newbvote = mysql_escape_string($_POST["vote$voter"]);
+        $newbvote = mysql_real_escape_string($_POST["vote$voter"]);
         #print "newbvote, bvote: $newbvote $bvote";
         if ($newbvote != $bvote)
         {

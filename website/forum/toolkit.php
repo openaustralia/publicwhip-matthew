@@ -921,7 +921,7 @@ function safe_sql( $data )
 
 	   {
 
-		$data = mysql_escape_string( $data );
+		$data = mysql_real_escape_string( $data );
 
 	   }
 

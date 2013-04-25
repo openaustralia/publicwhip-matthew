@@ -10,12 +10,12 @@
 require_once "../database.inc";
 require_once "user.inc";
 
-$user_name=mysql_escape_string($_POST["user_name"]);
-$password1=mysql_escape_string($_POST["password1"]);
-$password2=mysql_escape_string($_POST["password2"]);
-$email=mysql_escape_string($_POST["email"]);
-$real_name=mysql_escape_string($_POST["real_name"]);
-$submit=mysql_escape_string($_POST["submit"]);
+$user_name=mysql_real_escape_string($_POST["user_name"]);
+$password1=mysql_real_escape_string($_POST["password1"]);
+$password2=mysql_real_escape_string($_POST["password2"]);
+$email=mysql_real_escape_string($_POST["email"]);
+$real_name=mysql_real_escape_string($_POST["real_name"]);
+$submit=mysql_real_escape_string($_POST["submit"]);
 
 if (user_isloggedin()) {
 	user_logout();

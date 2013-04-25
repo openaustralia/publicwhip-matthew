@@ -346,7 +346,7 @@ if ($vrand)
 else
     $vrand = rand(10, 10000000);
 
-$vdash = mysql_escape_string(db_scrub($_GET["dash"])); # used to tell if /by-election or /byelection was used
+$vdash = mysql_real_escape_string(db_scrub($_GET["dash"])); # used to tell if /by-election or /byelection was used
 $vformfilled = ($vterdet and $vpubemknow and $vpubemagg);
 
 $referrer = $_SERVER["HTTP_REFERER"];
@@ -386,7 +386,7 @@ if ($showhits)
     #            (referrer, ltime, ipnumber, page, subject, url, thing_id)
     #            VALUES ('$referrer', NOW(), '$ipnumber', 'fortytwodays', '', '$vdash', $vrand)");
     #$db->query("INSERT INTO pw_dyn_fortytwoday_comments (vterdet, vpubem, ltime, vrand, vpostcode, constituency)
-    #            VALUES ('$vterdet', '$vpubem', NOW(), $vrand, '$vpostcode', '".mysql_escape_string($constituency)."')");
+    #            VALUES ('$vterdet', '$vpubem', NOW(), $vrand, '$vpostcode', '".mysql_real_escape_string($constituency)."')");
 
 }
 
@@ -416,7 +416,7 @@ else if ($mpval and $vformfilled)
     #$db->query("drop table if exists pw_dyn_fortytwoday_comments");
     #$db->query("create table pw_dyn_fortytwoday_comments (vterdet varchar(10), vpubem varchar(20), ltime timestamp, vrand int, vpostcode varchar(20), constituency varchar(80))");
     $db->query("INSERT INTO pw_dyn_fortytwoday_comments (vterdet, vpubem, ltime, vrand, vpostcode, constituency)
-                VALUES ('$vterdet', '$vpubem', NOW(), $vrand, '$vpostcode', '".mysql_escape_string($constituency)."')");
+                VALUES ('$vterdet', '$vpubem', NOW(), $vrand, '$vpostcode', '".mysql_real_escape_string($constituency)."')");
 
     # looks up as a batch.  Or we could look up individually for easier coding
     $votes = GetVotes($db, $mpprop["person"], 1039);

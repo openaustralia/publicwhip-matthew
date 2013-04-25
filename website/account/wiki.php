@@ -71,7 +71,7 @@ if (user_isloggedin()) # User logged in, show settings screen
             }
             $db->query_errcheck("insert into pw_dyn_wiki_motion
                 (division_date, division_number, house, text_body, user_id, edit_date) values
-                ('$params[0]', '$params[1]', '$params[2]', '".mysql_escape_string($newtext)."', '" . user_getid() . "', now())");
+                ('$params[0]', '$params[1]', '$params[2]', '".mysql_real_escape_string($newtext)."', '" . user_getid() . "', now())");
             audit_log("Edited $type wiki text $params[0] $params[1] $params[2]");
             if ($type == 'motion') {
                 notify_motion_updated($db, $params[0], $params[1], $params[2]);

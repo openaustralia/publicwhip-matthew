@@ -402,7 +402,7 @@ function WritePartyScores($candidates)
 #
 # start of direct printing
 #
-$vdash = mysql_escape_string(db_scrub($_GET["dash"])); # used to tell if /by-election or /byelection was used
+$vdash = mysql_real_escape_string(db_scrub($_GET["dash"])); # used to tell if /by-election or /byelection was used
 $vpostcode = db_scrub($_POST["vpostcode"]);  # a string of letters (each a-e for strong favour to against) in order of the policies
 $vrand = db_scrub($_GET["vrand"]);
 $vevent = db_scrub($_GET["vevent"]);

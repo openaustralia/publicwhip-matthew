@@ -12,10 +12,10 @@ require_once "../account/user.inc";
 require_once "../db.inc";
 $db = new DB();
 
-$email=mysql_escape_string($_POST["email"]);
-$submit=mysql_escape_string($_POST["submit"]);
-$token=mysql_escape_string($_GET["token"]);
-$unsub=mysql_escape_string($_GET["unsub"]);
+$email=mysql_real_escape_string($_POST["email"]);
+$submit=mysql_real_escape_string($_POST["submit"]);
+$token=mysql_real_escape_string($_GET["token"]);
+$unsub=mysql_real_escape_string($_GET["unsub"]);
 
 if ($email == "your email")
     $email = "";

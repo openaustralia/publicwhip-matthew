@@ -183,7 +183,7 @@
                         $new_private_name = "provisional";
                     dream_post_forum_action($db, $dreamid, "Policy is now [b]".$new_private_name."[/b]");
                 }
-                $ret = $db->query_errcheck("update pw_dyn_dreammp set name='$name', description='".mysql_escape_string($description)."', private='".$new_private."' where dream_id='$dreamid'");
+                $ret = $db->query_errcheck("update pw_dyn_dreammp set name='$name', description='".mysql_real_escape_string($description)."', private='".$new_private."' where dream_id='$dreamid'");
                 notify_dream_mp_updated($db, intval($dreamid));
 
                 if ($ret)
@@ -413,9 +413,9 @@
     if ($dismode["aggregate"] == "fulltable")
 	{
 		// changed vote
-		if (mysql_escape_string($_POST["submiteditpolicy"]))
+		if (mysql_real_escape_string($_POST["submiteditpolicy"]))
         {
-        	$newseldreamid = mysql_escape_string($_POST["seldreamid"]);
+        	$newseldreamid = mysql_real_escape_string($_POST["seldreamid"]);
 			$icomma = strpos($newseldreamid, ',');
 			$seldreamid = substr($newseldreamid, 0, $icomma);
 			$seldreamidvote = substr($newseldreamid, $icomma + 1);
