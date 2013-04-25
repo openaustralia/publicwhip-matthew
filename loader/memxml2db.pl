@@ -43,14 +43,14 @@ $sth = PublicWhip::DB::query($dbh, "delete from pw_constituency");
 my %membertoperson;
 my $twig = XML::Twig->new(
     twig_handlers => { 
-            'constituency' => \&loadcons, 
+            'division' => \&loadcons,
             'member' => \&loadmember, 
             'lord' => \&loadmember, 
             'person' => \&loadperson, 
             'moffice' => \&loadmoffice 
         }, 
     output_filter => 'safe');
-$twig->parsefile("$members_location/constituencies.xml");
+$twig->parsefile("$members_location/divisions.xml");
 $twig->parsefile("$members_location/people.xml");
 $twig->parsefile("$members_location/ministers.xml");
 $twig->parsefile("$members_location/all-members.xml");
