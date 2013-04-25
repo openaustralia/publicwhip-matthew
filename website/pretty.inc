@@ -138,7 +138,7 @@ function interesting_word($word)
 function random_big_word($phrase)
 {
     $phrase = preg_replace("/[()\[\]0-9.,]/", "", $phrase);
-    $words = split(" ", $phrase);
+    $words = explode(" ", $phrase);
 #    print "<p>words: "; foreach ($words as $word) { print "'$word';"; }
     $lesswords = array_filter($words, "interesting_word");
 #    print "<p>lesswords: "; foreach ($lesswords as $word) { print "'$word';"; }
